@@ -1,0 +1,64 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 15px 0px;
+}
+.logo {
+	width: 100%;
+	height: auto;
+}
+.menu-button {
+	padding: 0px 7px;
+	border: 2px solid #004884;
+	width: 50px;
+	height: 42px;
+	border-radius: 2px;
+	overflow: hidden;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	transition: all 0.36s;
+	-webkit-transition: all 0.36s;
+	-moz-transition: all 0.36s;
+	-ms-transition: all 0.36s;
+	-o-transition: all 0.36s;
+}
+.menu-button:hover {
+	cursor: pointer;
+	border-color: #3a3a3a;
+	margin-top: 6px;
+	transition: all 0.36s;
+	-webkit-transition: all 0.36s;
+	-moz-transition: all 0.36s;
+	-ms-transition: all 0.36s;
+	-o-transition: all 0.36s;
+}
+.menu-button:hover span {
+	background-color: #3a3a3a;
+}
+.menu-button span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #004884;
+	margin: 8px auto;
+}
+.menu-block {
+	display: flex;
+	align-items: center;
+}
+.phones-block {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: right;
+	align-items: center;
+}
+.phone {
+	font-family: "Lato-Black";
+	font-size: 27px;
+}

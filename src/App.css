@@ -1,38 +1,32 @@
+@font-face {
+	font-family: "Lato-Black";
+	src: url("./fonts/Lato-Black.ttf");
+}
+@font-face {
+	font-family: "Lato-Regular";
+	src: url("./fonts/Lato-Regular.ttf");
+}
 .App {
-  text-align: center;
+	font-family: "Lato-Regular";
+	color: #3a3a3a;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+	color: #004884;
+	fill: #004884;
+	letter-spacing: 2px;
+	transition: all 0.36s;
+	-webkit-transition: all 0.36s;
+	-moz-transition: all 0.36s;
+	-ms-transition: all 0.36s;
+	-o-transition: all 0.36s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+	color: #3a3a3a;
+	text-decoration: none;
+	fill: #3a3a3a;
+	transition: all 0.36s;
+	-webkit-transition: all 0.36s;
+	-moz-transition: all 0.36s;
+	-ms-transition: all 0.36s;
+	-o-transition: all 0.36s;
 }

@@ -6,32 +6,40 @@ import telegram from "../../img/telega.png";
 import "./index.css";
 const Header = () => {
 	return (
-		<div className='container'>
-			<header>
-				<div className='col-4'></div>
-				<div className='col-4'>
-					<img src={logo} className='App-logo' alt='logo' />
+		<header className='container'>
+			<div className='col-3 menu-block'>
+				<div className='menu-button'>
+					<span> </span>
+					<span> </span>
+					<span> </span>
 				</div>
-				<div className='col-4'>
-					<a href='tel:+38(093)-424-92-54'>+38(093)-424-92-54</a>
-					<div className='col-4'>
-						<a href='#'>
-							<img src={viber} alt='viber' />
-						</a>
-					</div>
-					<div className='col-4'>
-						<a href='#'>
-							<img src={whatsapp} alt='whatsapp' />
-						</a>
-					</div>
-					<div className='col-4'>
-						<a href='#'>
-							<img src={telegram} alt='telegram' />
-						</a>
-					</div>
+			</div>
+			<div className='col-5'>
+				<img src={logo} className='logo' alt='logo' />
+			</div>
+			<div className='col-4 phones-block'>
+				<div className='col-12'>
+					<a href='tel:+38(093)-424-92-54' className='phone'>
+						+38 (093) 424 92 54
+					</a>
 				</div>
-			</header>
-		</div>
+				<div className='col-3'>
+					<a href='#'>
+						<img src={viber} alt='viber' />
+					</a>
+				</div>
+				<div className='col-3'>
+					<a href='#'>
+						<img src={whatsapp} alt='whatsapp' />
+					</a>
+				</div>
+				<div className='col-3'>
+					<a href='#'>
+						<img src={telegram} alt='telegram' />
+					</a>
+				</div>
+			</div>
+		</header>
 	);
 };
 
