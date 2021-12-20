@@ -1,0 +1,22 @@
+.slider-block {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 45px;
+}
+.slide,
+.slide img {
+	position: relative;
+	width: 100%;
+}
+.slide h1 {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 24px;
+	}
+}

@@ -1,14 +1,15 @@
 @font-face {
-	font-family: "Lato-Black";
-	src: url("./fonts/Lato-Black.ttf");
-}
-@font-face {
-	font-family: "Lato-Regular";
-	src: url("./fonts/Lato-Regular.ttf");
+	font-family: "Arial-Black";
+	src: url("./fonts/Arial-Black.ttf");
 }
 .App {
-	font-family: "Lato-Regular";
 	color: #3a3a3a;
+}
+a:active,
+a:focus,
+input:active,
+input:focus {
+	outline: 0;
 }
 a {
 	color: #004884;
@@ -19,6 +20,7 @@ a {
 	-moz-transition: all 0.36s;
 	-ms-transition: all 0.36s;
 	-o-transition: all 0.36s;
+	font-family: "Arial-Black";
 }
 a:hover {
 	color: #3a3a3a;
@@ -29,4 +31,24 @@ a:hover {
 	-moz-transition: all 0.36s;
 	-ms-transition: all 0.36s;
 	-o-transition: all 0.36s;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Arial-Black";
+	letter-spacing: 1px;
+}
+button {
+	color: #ffffff;
+	font-family: "Arial-Black";
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 18px;
+	border: none;
+	background-color: #004687;
+}
+button:hover {
+	background-color: #3a3a3a;
 }

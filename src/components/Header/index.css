@@ -59,6 +59,21 @@ header {
 	align-items: center;
 }
 .phone {
-	font-family: "Lato-Black";
-	font-size: 27px;
+	font-size: 23px;
+}
+
+@media (max-width: 1200px) {
+	.phones-block {
+		text-align: center;
+		justify-content: center;
+	}
+	.phone {
+		margin: 15px auto;
+	}
+	.menu-button {
+		margin: auto;
+	}
+	.menu-button:hover {
+		margin-top: 0px;
+	}
 }

@@ -9,15 +9,16 @@ export default function Footer() {
 				<ul>
 					<li>
 						<a href='#'>
-							<img src={fb} alt='fb' />
+							<img src={inst} alt='insta' />
 						</a>
 					</li>
 					<li>
 						<a href='#'>
-							<img src={inst} alt='insta' />
+							<img src={fb} alt='fb' />	
 						</a>
 					</li>
 				</ul>
+				<p>Политика конфиденциальности</p>
 			</div>
 		</footer>
 	);

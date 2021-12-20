@@ -1,19 +1,21 @@
 import "./App.css";
-import Header from "./components/Header/";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TopMenu from "./components/TopMenu";
-import Bg from "./img/slider1.jpg";
+import MainSlider from "./components/MainSlider";
+import InnerMenu from "./components/InnerMenu";
+import Feedback from "./components/Feedback";
 function App() {
 	return (
 		<div className='App'>
 			<Header />
 			<TopMenu />
-			<img src={Bg} alt='slider' />
+			<MainSlider />
 			<div className='container'>
-				<div className='col-12'>
-					<p>.Test</p>
-				</div>
+				<InnerMenu />
+				<Feedback />
 			</div>
+
 			<Footer />
 		</div>
 	);

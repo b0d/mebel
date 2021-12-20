@@ -6,23 +6,18 @@ const TopMenu = () => {
 			<menu>
 				<ul>
 					<li>
-						<a href='#'>Menu</a>
+						<a href='#'>Про нас</a>
 					</li>
 					<li>
-						<a href='#'>Menu</a>
+						<a href='#'>Продукція</a>
 					</li>
 					<li>
-						<a href='#'>Menu</a>
+						<a href='#'>Каталоги</a>
 					</li>
 					<li>
-						<a href='#'>Menu</a>
+						<a href='#'>Контакти</a>
 					</li>
-					<li>
-						<a href='#'>Menu</a>
-					</li>
-					<li>
-						<a href='#'>Menu</a>
-					</li>
+					<li><a href='#'>UA</a></li>
 				</ul>
 			</menu>
 		</div>

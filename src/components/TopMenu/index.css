@@ -11,15 +11,26 @@ menu ul {
 	flex-direction: row;
 	list-style: none;
 	justify-content: space-around;
-}
-menu a {
-	color: #3a3a3a;
-	padding: 6px 10px 8px;
+	flex-wrap: wrap;
 }
 
+menu a {
+	color: #3a3a3a;
+	padding: 18px;
+	font-size: 18px;
+}
 menu a:hover,
 .active-link {
 	color: #ffffff;
 	background-color: #004884;
-	font-size: 16px;
+}
+@media (max-width: 768px) {
+	menu ul {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	menu ul li {
+		margin: 18px 0px;
+	}
 }

@@ -1,0 +1,46 @@
+.feedback-block {
+	background: url(../../img/feedback-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding-top: 45px;
+	text-align: center;
+	min-height: 360px;
+	margin-bottom: 45px;
+}
+.feedback-block span {
+	display: flex;
+	justify-content: center;
+	font-size: 28px;
+	font-family: "Arial-Black";
+	margin-bottom: 40px;
+	position: relative;
+}
+.feedback-block span:before,
+.feedback-block span:after {
+	content: "";
+	width: 100px;
+	height: 2px;
+	background-color: #3a3a3a;
+	margin: 20px 15px 0;
+}
+.feedback-form {
+	width: 290px;
+	margin: auto;
+}
+.feedback-form form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.feedback-form form input {
+	margin-bottom: 30px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px solid #3a3a3a;
+	padding: 6px;
+}
+
+@media (max-width: 768px) {
+	.feedback-block span {
+		font-size: 21px;
+	}
+}

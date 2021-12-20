@@ -1,0 +1,25 @@
+.inner-menu-block {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 45px;
+}
+.inner-menu-block img {
+	width: 100%;
+}
+.inner-menu-block h2 {
+	font-size: 28px;
+	text-align: center;
+}
+.inner-menu-block figcaption {
+	padding: 18px;
+	font-family: "Arial-Black";
+	font-size: 16px;
+	color: #3a3a3a;
+	text-align: center;
+}
+.inner-menu-block a:hover figcaption {
+	background-color: #3a3a3a;
+	color: #ffffff;
+}
