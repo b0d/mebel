@@ -3,8 +3,9 @@
 	background-size: cover;
 	padding-top: 45px;
 	text-align: center;
-	min-height: 360px;
+	min-height: 400px;
 	margin-bottom: 45px;
+	background-attachment: fixed;
 }
 .feedback-block span {
 	display: flex;

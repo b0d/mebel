@@ -8,6 +8,9 @@ header {
 .logo {
 	width: 100%;
 	height: auto;
+	max-width: 400px;
+	display: flex;
+	margin: auto;
 }
 .menu-button {
 	padding: 0px 7px;
@@ -62,16 +65,95 @@ header {
 	font-size: 23px;
 }
 
+menu {
+	padding: 0px 0px 45px;
+	margin: 30px 0px 0px;
+	position: relative;
+}
+menu ul {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	opacity: 1;
+	background-color: rgba(255, 255, 255, 0.91);
+	transition: all 1s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+}
+menu a {
+	color: #3a3a3a;
+	padding: 18px;
+	font-size: 18px;
+}
+menu a:hover,
+.active-link {
+	color: #ffffff;
+	background-color: #004884;
+}
+.hidden ul {
+	opacity: 0;
+}
+@media (max-width: 768px) {
+	menu {
+		position: absolute;
+		z-index: 999;
+		top: 80px;
+		left: 0;
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transition: all 1s;
+		-webkit-transition: all 0.6s;
+		-moz-transition: all 0.6s;
+		-ms-transition: all 0.6s;
+		-o-transition: all 0.6s;
+		border-right: 6px solid #004884;
+		border-top: 1px solid #004884;
+		border-bottom: 1px solid #004884;
+		border-bottom-right-radius: 6px;
+		border-top-right-radius: 6px;
+		padding-bottom: 0;
+	}
+	.hidden {
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		-moz-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+		-o-transform: translateX(-100%);
+		transition: all 1s;
+		-webkit-transition: all 0.6s;
+		-moz-transition: all 0.6s;
+		-ms-transition: all 0.6s;
+		-o-transition: all 0.6s;
+	}
+	menu ul {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 15px;
+	}
+	menu ul li {
+		margin: 18px 0px;
+	}
+}
+
 @media (max-width: 1200px) {
 	.phones-block {
 		text-align: center;
 		justify-content: center;
 	}
 	.phone {
+		display: flex;
 		margin: 15px auto;
-	}
-	.menu-button {
-		margin: auto;
+		justify-content: center;
 	}
 	.menu-button:hover {
 		margin-top: 0px;

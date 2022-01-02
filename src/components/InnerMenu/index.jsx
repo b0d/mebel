@@ -1,74 +1,46 @@
 import React from "react";
 import "./index.css";
-import A from "../../img/bambini.jpg";
-import B from "../../img/baltika.jpg";
-import C from "../../img/venecia.jpg";
-import D from "../../img/gelexy.jpg";
-import E from "../../img/jenis.jpg";
-import F from "../../img/karmen.jpg";
-import G from "../../img/kendi.jpg";
+import { Link, useParams } from "react-router-dom";
+import catts from "../products-cat.json";
+
 const InnerMenu = () => {
+	/** all categorries */
+	const nameOfCatts = catts.map((c) => c["cat"]);
+	function unique(arr) {
+		let result = [];
+		for (let str of arr) {
+			if (!result.includes(str)) {
+				result.push(str);
+			}
+		}
+		console.log(result);
+	}
+	unique(nameOfCatts);
+	/** */
+
+	const cattBlocks = catts.map((results) => {
+		return (
+			<div
+				className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'
+				key={results["id"]}
+			>
+				<Link to={`/InnerCategory/${results["cat"]}`}>
+					<figure>
+						<img src={results["image"]} alt={results["cat"]} />
+						<figcaption>{results["cat"]}</figcaption>
+					</figure>
+				</Link>
+			</div>
+		);
+	});
+	/** */
 	return (
 		<div className='inner-menu-block'>
 			<div className='col-12'>
 				<h2>Header h2</h2>
 			</div>
-			<div className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-				<a href='#'>
-					<figure>
-						<img src={A} alt='Прямі дивани' />
-						<figcaption>Прямі дивани</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-				<a href='#'>
-					<figure>
-						<img src={B} alt='Кутові дивани' />
-						<figcaption>Кутові дивани</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-				<a href='#'>
-					<figure>
-						<img src={C} alt='Нерозкладні дивани' />
-						<figcaption>Нерозкладні дивани</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-				<a href='#'>
-					<figure>
-						<img src={D} alt='Крісла та пуфи' />
-						<figcaption>Крісла та пуфи</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-				<a href='#'>
-					<figure>
-						<img src={E} alt="М'які ліжка" />
-						<figcaption>М'які ліжка</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-				<a href='#'>
-					<figure>
-						<img src={F} alt='Крісло-мішок' />
-						<figcaption>Крісло-мішок</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-				<a href='#'>
-					<figure>
-						<img src={G} alt='Дитячі дивани' />
-						<figcaption>Дитячі дивани</figcaption>
-					</figure>
-				</a>
-			</div>
+
+			{cattBlocks}
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
 				laboriosam maiores, quaerat cumque facere architecto quas. Doloribus
