@@ -1,12 +1,5 @@
 import React from "react";
 import "./index.css";
-import A from "../../../img/bambini.jpg";
-import B from "../../../img/baltika.jpg";
-import C from "../../../img/venecia.jpg";
-import D from "../../../img/gelexy.jpg";
-import E from "../../../img/jenis.jpg";
-import F from "../../../img/karmen.jpg";
-import G from "../../../img/kendi.jpg";
 import { Link, useParams } from "react-router-dom";
 import goods from "../../products.json";
 
@@ -16,7 +9,7 @@ const InnerCategory = () => {
 	/** goods for unique category */
 	const choosedCatt = params["id"];
 	const choosedCattGoods = [];
-	goods.map((c) => {
+	goods.products.map((c) => {
 		if (c["cat"] == choosedCatt) {
 			choosedCattGoods.push(c);
 		}
@@ -39,22 +32,46 @@ const InnerCategory = () => {
 		);
 	});
 
+	/** const [filters, setFilters] = useState();
+const items = useMemo(() => allItems.filter(item => как хочешь фильтруй), [filters])
+*/
+
+	const filter = goods.products.map((results) => {
+		const char = {};
+		if (goods.products.cat == choosedCatt) {
+			char = results.characteristics;
+		}
+		console.log(char);
+		/*return (
+			<li key={results["id"]}>
+				<span>{results["name"]}</span>
+				<span>{char}</span>
+			</li>
+		);*/
+	});
+
 	return (
 		<div className='inner-menu-block'>
-			<div className='col-12'>
-				<h2>Inner Category</h2>
+			<div className='col-2 inner-filter-block'>
+				Filter
+				<ul>{filter}</ul>
 			</div>
-			{blocks}
+			<div className='col-10 d-flex flex-wrap flex-row'>
+				<div className='col-12'>
+					<h2>Inner Category</h2>
+				</div>
+				{blocks}
 
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-				laboriosam maiores, quaerat cumque facere architecto quas. Doloribus
-				dolores temporibus, impedit animi illo error, expedita culpa at
-				doloremque vel iste obcaecati!Lorem ipsum dolor sit amet consectetur
-				adipisicing elit. Dicta laboriosam maiores, quaerat cumque facere
-				architecto quas. Doloribus dolores temporibus, impedit animi illo error,
-				expedita culpa at doloremque vel iste obcaecati!
-			</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+					laboriosam maiores, quaerat cumque facere architecto quas. Doloribus
+					dolores temporibus, impedit animi illo error, expedita culpa at
+					doloremque vel iste obcaecati!Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Dicta laboriosam maiores, quaerat cumque facere
+					architecto quas. Doloribus dolores temporibus, impedit animi illo
+					error, expedita culpa at doloremque vel iste obcaecati!
+				</p>
+			</div>
 		</div>
 	);
 };

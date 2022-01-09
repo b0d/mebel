@@ -1,0 +1,14 @@
+.inner-filter-block ul,
+.inner-filter-block ul li {
+	margin: 0px;
+	padding: 0px;
+}
+
+.inner-filter-block ul li {
+	list-style: none;
+	margin-top: 15px;
+}
+
+.inner-filter-block ul li:hover {
+	cursor: pointer;
+}

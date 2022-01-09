@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.css";
-import tests from "../../products.json";
+import productlist from "../../products.json";
 import { useParams } from "react-router-dom";
 
 const InnerProduct = () => {
 	const parametr = useParams();
 	/** all categorries 
-	const nameOfCatts = tests.map((c) => c["cat"]);
+	const nameOfCatts = productlist.map((c) => c["cat"]);
 	function unique(arr) {
 		let result = [];
 		for (let str of arr) {
@@ -22,7 +22,7 @@ const InnerProduct = () => {
 	/** goods for unique category 
 	const choosedCatt = "Нерозкладні";
 	const choosedCattGoods = [];
-	tests.map((c) => {
+	productlist.map((c) => {
 		if (c["cat"] == choosedCatt) {
 			choosedCattGoods.push(c);
 		}
@@ -31,7 +31,7 @@ const InnerProduct = () => {
 */
 
 	/** all goods 
-	const blocks = tests.map((results) => {
+	const blocks = productlist.map((results) => {
 		return (
 			<div
 				className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'
@@ -48,14 +48,13 @@ const InnerProduct = () => {
 	/** !!! */
 
 	const choosedProd = parametr["id"];
-	console.log(choosedProd);
 	const choosedProdGoods = [];
-	tests.map((c) => {
+	productlist.products.map((c) => {
 		if (c["name"] == choosedProd) {
 			choosedProdGoods.push(c);
 		}
 	});
-	console.log(choosedProdGoods);
+
 
 	const goods = choosedProdGoods.map((results) => {
 		return (
@@ -67,6 +66,7 @@ const InnerProduct = () => {
 					<img src={results["image"]} alt={results["name"]} />
 					<figcaption>{results["name"]}</figcaption>
 				</figure>
+				<p>{results["color"]}</p>
 			</div>
 		);
 	});
@@ -81,7 +81,7 @@ const InnerProduct = () => {
 	);
 
 	/* return( 
-		tests.map((results) => {
+		productlist.map((results) => {
 		return (
 			<div
 				className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'

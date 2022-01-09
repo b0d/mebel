@@ -1,0 +1,68 @@
+{
+    "categories":{
+            "id":"",
+            "category":"",
+            "imgOfCat":""
+        },
+    "goods":[
+        {
+        "id":"",
+        "catId":"",
+        "itemName":"",
+        "faceImg": ""
+    }],
+    "images":[
+        {
+            "id":"",
+            "goodsId":"",
+            "url":"",
+            "alt":""            
+        }
+    ],
+    "characteristics":[
+        {
+            "id":"",
+            "option":""
+        }
+    ],
+    "goodsCharacteristics":[
+        {
+            "goodsId":"",
+            "charId":"",
+            "detailsOfOption":""
+        }
+    ]  
+}
+
+
+
+
+
+{
+    "id": 1,
+    "cat": 1,
+    "name": "Рубашка №1",
+    "face-image":
+        "/face-imgs/avalon.jpg",
+    "images":[
+        "/face-imgs/avalon.jpg",
+        "/face-imgs/avalon.jpg",
+        "/face-imgs/avalon.jpg"
+    ],
+    "characteristics":{
+        "color": 1000,
+        "material": "france",
+        "width": "S",
+        "height": "A",
+        "inside": "123",
+        "long": "1234",
+        "filling": "2",
+        "sleepPlace": "",
+        "made": "",
+        "pillowColor": "",
+        "mechanism": "",
+        "upholsteryMaterial": "",
+        "headrestHeight": "",
+        "additionally": ""
+    }
+},

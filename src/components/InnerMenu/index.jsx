@@ -1,33 +1,57 @@
 import React from "react";
 import "./index.css";
-import { Link, useParams } from "react-router-dom";
-import catts from "../products-cat.json";
+import { Link } from "react-router-dom";
+import data from "../products.json";
 
 const InnerMenu = () => {
-	/** all categorries */
-	const nameOfCatts = catts.map((c) => c["cat"]);
-	function unique(arr) {
-		let result = [];
-		for (let str of arr) {
-			if (!result.includes(str)) {
-				result.push(str);
-			}
-		}
-		console.log(result);
-	}
-	unique(nameOfCatts);
-	/** */
+	const products = data.products;
+	const cat = data.categories;
 
-	const cattBlocks = catts.map((results) => {
+/*
+	const catego = [... new Set(categories.category)]
+
+	for (const {cat: cat, id:id, image:image } of products){
+		resultz.push({id, cat, image });
+	}
+
+*/
+
+/*
+	let i = 0;
+	resultz.forEach(element => {
+
+	
+		if (!element.cat !== result[i]) {
+			test.push(element);
+			i++;
+		  }});
+	console.log(test);
+
+	/*
+	  let uniq = [];
+	 uniq = resultz.filter(word => !uniq.includes(word.cat));*/
+/*
+	for (let i=0; i<resultz.length; i++){
+		if (resultz[i].cat !== result[i]) {
+			test.push(resultz[i]);
+		  }
+	}
+	console.log(test);
+	console.log(result);
+	console.log(resultz);
+*/
+
+
+	const cattBlocks = cat.map((results) => {
 		return (
 			<div
 				className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'
 				key={results["id"]}
 			>
-				<Link to={`/InnerCategory/${results["cat"]}`}>
+				<Link to={`/InnerCategory/${results["id"]}`}>
 					<figure>
-						<img src={results["image"]} alt={results["cat"]} />
-						<figcaption>{results["cat"]}</figcaption>
+						<img src={results["imgOfCat"]} alt={results["category"]} />
+						<figcaption>{results["category"]}</figcaption>
 					</figure>
 				</Link>
 			</div>
