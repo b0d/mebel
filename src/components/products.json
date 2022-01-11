@@ -7,8 +7,8 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
-			"material": "france",
+			"color": "1000",
+			"material": "german",
 			"width": "S",
 			"height": "A",
 			"inside": "123",
@@ -30,7 +30,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -53,7 +53,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -76,7 +76,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -99,7 +99,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -122,7 +122,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -145,7 +145,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -168,7 +168,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -191,7 +191,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -214,7 +214,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -237,7 +237,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -260,7 +260,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",
@@ -283,7 +283,7 @@
 		"image":
 			"/face-imgs/avalon.jpg",
 		"characteristics":{
-			"color": 1000,
+			"color": "1000",
 			"material": "france",
 			"width": "S",
 			"height": "A",

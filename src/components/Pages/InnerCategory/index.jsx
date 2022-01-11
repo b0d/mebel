@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import { Link, useParams } from "react-router-dom";
 import goods from "../../products.json";
@@ -14,7 +14,6 @@ const InnerCategory = () => {
 			choosedCattGoods.push(c);
 		}
 	});
-	console.log(choosedCattGoods);
 
 	const blocks = choosedCattGoods.map((results) => {
 		return (
@@ -35,26 +34,63 @@ const InnerCategory = () => {
 	/** const [filters, setFilters] = useState();
 const items = useMemo(() => allItems.filter(item => как хочешь фильтруй), [filters])
 */
+	/*	const [state, setState] = useState({
+		choosedCattGoods,
+		category: "all",
+	});
+	function handleChange({ target: { name, value } }) {
+		setState((prev) => ({ ...prev, [name]: value }));
+	}
+	let data = state.data;
+	if (state.category && state.category !== "all") {
+		data = data.filter((d) => d.category === state.category);
+	}
+	if (state.priceStart) {
+		data = data.filter((d) => Number(d.price) >= Number(state.priceStart));
+	}
+	if (state.priceEnd) {
+		data = data.filter((d) => Number(d.price) <= Number(state.priceEnd));
+	}
+*/
+	const checkIn = () => {
+		console.log("ohoho");
+	};
+	let originalChars = new Array();
+	const filter = goods.products.map((resultus) => {
+		if (resultus.cat == choosedCatt) {
+			const allChar = Object.values(resultus.characteristics);
+			for (let index = 0; index < allChar.length; index++) {
+				const element = allChar[index];
+				if (!originalChars.includes(element)) {
+					originalChars.push(element);
+				}
+			}
 
-	const filter = goods.products.map((results) => {
-		const char = {};
-		if (goods.products.cat == choosedCatt) {
-			char = results.characteristics;
+			/*		
+				let catChar = goods.products.map((resultus) => {
+		[...new Set(resultus.characteristics)];
+		console.log(catChar);
+	});
+			*/
 		}
-		console.log(char);
-		/*return (
-			<li key={results["id"]}>
-				<span>{results["name"]}</span>
-				<span>{char}</span>
-			</li>
-		);*/
+	});
+	console.log(originalChars);
+	let i = 0;
+	const filtered = originalChars.map((a) => {
+		if (a !== "") {
+			return (
+				<li key={i++}>
+					<span onClick={checkIn()}>{a}</span>
+				</li>
+			);
+		}
 	});
 
 	return (
 		<div className='inner-menu-block'>
 			<div className='col-2 inner-filter-block'>
 				Filter
-				<ul>{filter}</ul>
+				<ul>{filtered}</ul>
 			</div>
 			<div className='col-10 d-flex flex-wrap flex-row'>
 				<div className='col-12'>
