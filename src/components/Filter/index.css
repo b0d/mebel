@@ -1,0 +1,30 @@
+.buttNotActive,
+.buttNotActive:hover {
+	background-color: #3a3a3a;
+	cursor: no-drop;
+}
+.buttActive,
+.buttActive:hover {
+	background-color: #004687;
+	cursor: pointer;
+}
+.filterInnerBlock {
+	margin-bottom: 15px;
+}
+
+.filterBlock button {
+	font-size: 14px;
+	padding: 15px;
+}
+.delButt {
+	color: red;
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.delButt:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+.filterInnerBlock div:hover {
+	cursor: pointer;
+}

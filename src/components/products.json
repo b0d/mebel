@@ -3,338 +3,198 @@
 		{
 		"cat": 1,
 		"id": 1,
-		"name": "Рубашка №1",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "german",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}
-	},
-	{ 
+		"name": "Диван №1",
+		"image":"/face-imgs/avalon.jpg",
+        "images":[
+            "/face-imgs/avalon.jpg",
+            "/face-imgs/avalon.jpg",
+            "/face-imgs/avalon.jpg",
+            "/face-imgs/avalon.jpg"
+           ]
+	    },
+	    { 
 		"cat": 1,
 		"id": 2,
-		"name": "Рубашка №2",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}
+		"name": "Диван №2",
+		"image":"/face-imgs/avalon.jpg",			
+        "images":[
+                "/face-imgs/avalon.jpg",
+                "/face-imgs/avalon.jpg",
+                "/face-imgs/avalon.jpg",
+                "/face-imgs/avalon.jpg"
+            ]
 		},
-	{
+	    { 
 		"cat": 2,
 		"id": 3,
-		"name": "Рубашка №3",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
+		"name": "Диван №3",
+		"image":"/face-imgs/avalon.jpg",			
+        "images":[
+                "/face-imgs/avalon.jpg",
+                "/face-imgs/avalon.jpg",
+                "/face-imgs/avalon.jpg",
+                "/face-imgs/avalon.jpg"
+            ]
 		}
-	},
-	{ 
-		"cat": 3,
-		"id": 4,
-		"name": "Рубашка №5",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}
-		},
-	{
-		"cat": 3,
-		"id": 5,
-		"name": "Рубашка №6",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}
-	},
-	{ 
-		"cat": 4,
-		"id": 6,
-		"name": "Рубашка №7",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}	
-		},
-	{
-		"cat": 4,
-		"id": 7,
-		"name": "Рубашка №8",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}
-	},
-	{ 
-		"cat": 5,
-		"id": 8,
-		"name": "Рубашка №9",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}	
-		},
-	{
-		"cat": 5,
-		"id": 9,
-		"name": "Рубашка №10",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}
-	},
-	{ 
-		"cat": 6,
-		"id": 10,
-		"name": "Рубашка №11",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}	
-		},
-	{
-		"cat": 6,
-		"id": 11,
-		"name": "Рубашка №12",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}
-	},
-	{ 
-		"cat": 7,
-		"id": 12,
-		"name": "Рубашка №13",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}	
-		},
-	{
-		"cat": 7,
-		"id": 13,
-		"name": "Рубашка №14",
-		"image":
-			"/face-imgs/avalon.jpg",
-		"characteristics":{
-			"color": "1000",
-			"material": "france",
-			"width": "S",
-			"height": "A",
-			"inside": "123",
-			"long": "1234",
-			"filling": "2",
-			"sleepPlace": "",
-			"made": "",
-			"pillowColor": "",
-			"mechanism": "",
-			"upholsteryMaterial": "",
-			"headrestHeight": "",
-			"additionally": ""
-		}
-	}],
+	],
+        
 	"categories":[
 		{
 			"id":1,
 			"category":"Прямі дивани",
-			"imgOfCat":"/face-imgs/avalon.jpg"
+			"imgOfCat":"/face-imgs/avalon.jpg",
+			"smallDescr": ""
 		},
 		{
 			"id":2,
 			"category":"Кутові дивани",
-			"imgOfCat":"/face-imgs/avalon.jpg"
+			"imgOfCat":"/face-imgs/avalon.jpg",
+			"smallDescr": ""
 		},
 		{
 			"id":3,
 			"category":"Нерозкладні дивани",
-			"imgOfCat":"/face-imgs/avalon.jpg"
+			"imgOfCat":"/face-imgs/avalon.jpg",
+			"smallDescr": ""
 		},
 		{
 			"id":4,
 			"category":"Крісла та пуфи",
-			"imgOfCat":"/face-imgs/avalon.jpg"
+			"imgOfCat":"/face-imgs/avalon.jpg",
+			"smallDescr": ""
 		},
 		{
 			"id":5,
 			"category":"М'які ліжка",
-			"imgOfCat":"/face-imgs/avalon.jpg"
+			"imgOfCat":"/face-imgs/avalon.jpg",
+			"smallDescr": ""
 		},
 		{
 			"id":6,
 			"category":"Крісло-мішок",
-			"imgOfCat":"/face-imgs/avalon.jpg"
+			"imgOfCat":"/face-imgs/avalon.jpg",
+			"smallDescr": ""
 		},
 		{
 			"id":7,
 			"category":"Дитячі дивани",
-			"imgOfCat":"/face-imgs/avalon.jpg"
-		}
-	]
+			"imgOfCat":"/face-imgs/avalon.jpg",
+			"smallDescr": ""
+		}],
+	"characteristics":[
+		{
+			"id":1,
+			"option":"Колір"
+		},
+		{
+			"id":2,
+			"option":"Тканина"
+		},
+        {
+			"id":3,
+			"option":"Ширина"
+		},
+		{
+			"id":4,
+			"option":"Висота"
+		},
+        {
+			"id":5,
+			"option":"Глибина"
+		},
+		{
+			"id":6,
+			"option":"Довжина"
+		},
+		{
+			"id":7,
+			"option":"Наповнення"
+		},
+		{
+			"id":8,
+			"option":"Розмір спального місця"
+		},
+        {
+			"id":9,
+			"option":"Термін виготовлення"
+		},
+		{
+			"id":10,
+			"option":"Колір подушки"
+		},
+        {
+			"id":11,
+			"option":"Механізм трансформації"
+		},
+		{
+			"id":12,
+			"option":"Матеріал оббивки"
+		},
+		{
+			"id":13,
+			"option":"Висота підголів'я"
+		},
+		{
+			"id":14,
+			"option":"Додатково"
+		}],
+    "products.characteristics":[
+            {
+				"id":1,
+				"products.id": 1,
+				"characteristics.id": 1,
+				"description": "Descr of char.1"
+			},
+			{
+				"id":2,
+				"products.id": 1,
+				"characteristics.id": 2,
+				"description": "Descr of char.2"
+			},
+			{
+				"id":3,
+				"products.id": 1,
+				"characteristics.id": 3,
+				"description": "Descr of char.3"
+			},
+			{
+				"id":4,
+				"products.id": 3,
+				"characteristics.id": 4,
+				"description": "Descr of char.4"
+			},
+            {
+				"id":5,
+				"products.id": 2,
+                "characteristics.id": 2,
+                "description": "Descr of char.2"
+			},
+            {
+				"id":6,
+				"products.id": 2,
+                "characteristics.id": 3,
+                "description": "Descr of char.3"
+			},
+            {
+				"id":7,
+				"products.id": 2,
+                "characteristics.id": 4,
+                "description": "Descr of char.4"
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ]
 }
 	
