@@ -14,10 +14,12 @@ function InnerCategory() {
 	let tests = new Array();
 	let textForFilter = {};
 	const [filteredProps, setFilteredProps] = useState([]);
-
-	goods.products.map((c) => {
+	const [filteredGoods, setFilteredGoods] = useState([]);
+	const allItems = [];
+	goods["products"].map((c) => {
 		if (c["cat"] == choosedCatt) {
 			choosedCattGoods.push(c);
+			//setFilteredGoods({ ...filteredGoods, c });
 		}
 	});
 
@@ -29,7 +31,6 @@ function InnerCategory() {
 	
 */
 	const blocks = choosedCattGoods.map((results) => {
-		// console.log(results);
 		return (
 			<div
 				className='col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'
@@ -98,7 +99,6 @@ function InnerCategory() {
 			}
 		}
 	});
-	console.log(tests);
 
 	tests.forEach((z) => {
 		if (textForFilter[z.name]) {
@@ -111,7 +111,17 @@ function InnerCategory() {
 		<div className='inner-menu-block'>
 			<div className='col-2 inner-filter-block'>
 				<Filter
-					gotProps={(s) => setFilteredProps([...filteredProps, s])}
+					gotProps={(s) => {
+						setFilteredProps([...filteredProps, s]);
+						originalChars.map((e) => {
+							filteredProps.forEach((element) => {
+								if (e["description"] === element) {
+									allItems.push(e["products.id"]);
+									console.log(allItems);
+								}
+							});
+						});
+					}}
 					catt={choosedCatt}
 					cleanProps={(s) => {
 						setFilteredProps(s);
@@ -121,6 +131,9 @@ function InnerCategory() {
 					}}
 					filteredProps={filteredProps}
 					textForFilter={textForFilter}
+					www={(s) => {
+						setFilteredProps(s);
+					}}
 				/>
 			</div>
 			<div className='col-10 d-flex flex-wrap flex-row'>
